@@ -98,8 +98,8 @@ EOF
     read -p "请输入您的私钥，需要0X，对应钱包需要有Mainnet 测试网ETH代币: " PRIV_KEY
     read -p "请输入您的以太坊主网Alchemy WSS URL: " MAINNET_WSS
     read -p "请输入您的以太坊主网Alchemy HTTP URL: " MAINNET_HTTP
-    read -p "请输入您的Mainnet以太坊Alchemy WSS URL: " SEPOLIA_WSS
-    read -p "请输入您的Mainnet以太坊Alchemy HTTP URL: " SEPOLIA_HTTP
+    read -p "请输入您的Mainnet以太坊Alchemy WSS URL: " Mainnet_WSS
+    read -p "请输入您的Mainnet以太坊Alchemy HTTP URL: " Mainnet_HTTP
 
     # 创建.env文件
     cat <<EOF > .env
@@ -120,7 +120,7 @@ REDIS_TTL=86400000
 
 ############### App specific config ###############
 
-CONFIRM_CHAINS='["sepolia"]'
+CONFIRM_CHAINS='["Mainnet"]'
 CONFIRM_MODELS='[13]'
 
 CONFIRM_USE_CROSSCHECK=true
