@@ -95,11 +95,11 @@ networks:
 EOF
 
     # 提示用户输入环境变量的值
-    read -p "请输入您的私钥，需要0X，对应钱包需要有Sepolia 测试网ETH代币: " PRIV_KEY
+    read -p "请输入您的私钥，需要0X，对应钱包需要有Mainnet 测试网ETH代币: " PRIV_KEY
     read -p "请输入您的以太坊主网Alchemy WSS URL: " MAINNET_WSS
     read -p "请输入您的以太坊主网Alchemy HTTP URL: " MAINNET_HTTP
-    read -p "请输入您的Sepolia以太坊Alchemy WSS URL: " SEPOLIA_WSS
-    read -p "请输入您的Sepolia以太坊Alchemy HTTP URL: " SEPOLIA_HTTP
+    read -p "请输入您的Mainnet以太坊Alchemy WSS URL: " SEPOLIA_WSS
+    read -p "请输入您的Mainnet以太坊Alchemy HTTP URL: " SEPOLIA_HTTP
 
     # 创建.env文件
     cat <<EOF > .env
@@ -113,8 +113,8 @@ TORA_ENV=production
 
 MAINNET_WSS="$MAINNET_WSS"
 MAINNET_HTTP="$MAINNET_HTTP"
-SEPOLIA_WSS="$SEPOLIA_WSS"
-SEPOLIA_HTTP="$SEPOLIA_HTTP"
+Mainnet_WSS="$SEPOLIA_WSS"
+Mainnet_HTTP="$SEPOLIA_HTTP"
 
 REDIS_TTL=86400000
 
